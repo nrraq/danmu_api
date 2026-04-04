@@ -20,6 +20,10 @@
       "dest": "/danmu_api/worker.js"
     },
     {
+      "src": "/proxy/(.*)",
+      "dest": "https://api.dandanplay.net/api/v2/$1"
+    },
+    {
       "src": "/(.*)",
       "dest": "/danmu_api/worker.js"
     }
